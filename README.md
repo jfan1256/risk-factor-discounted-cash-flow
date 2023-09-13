@@ -10,8 +10,7 @@ Initialize the github repo on your local computer and setup a venv/conda environ
 ## Example
 In this notebook Emerson Eletric Co. (EMR) WACC was calculated. The steps are as followed:
 
-#### To calculate EMR’s WACC (discount rate), a three-step process was required: 
-##### Calculating the Cost of Equity (COE). The traditional method to calculate COE is using the CAPM model on a yearly interval: 
+### Calculating the Cost of Equity (COE). The traditional method to calculate COE is using the CAPM model on a yearly interval: 
 Risk-Free Rate of Return + Beta × (Market Rate of Return – Risk-Free Rate of Return)
 To improve on the limitations of CAPM, a more robust model (higher R^2 than CAPM) was utilized to predict on a monthly interval. The model incorporates ETF returns (retrieved from yahoo finance), macroeconomic data (retrieved from SEC), and Fama-French (retrieved from Kenneth French): 
 
@@ -20,9 +19,9 @@ Return – Risk-Free Rate of Return)
 
 The combined predictors totaled to 25 different beta coefficients (the beta in the table below equals the mean of these 25 coefficients). Since EMR’s returns were regressed/predicted on a monthly basis, annual returns were calculated by compounding each year's monthly returns respectively. The timeframe for regression was ‘2018-01’ to ‘2023-06’. For further information and access to the code follow this github repo I made.
 
-##### Calculating the Cost of Debt (COD). The COD was calculated using the following formula: Interest Expense / Total Book Value of Debt. 
+### Calculating the Cost of Debt (COD). The COD was calculated using the following formula: Interest Expense / Total Book Value of Debt. 
 
-##### Plugging into WACC formula:
+#### Plugging into WACC formula:
 WACC = (Cost of Equity * % Equity) + (Cost of Debt * % Debt)(1-Tax Rate) + 
 (Preferred Shares * % Preferred Shares)
 
